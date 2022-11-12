@@ -11,7 +11,21 @@ public class Car extends Transport implements Competable{
         CROSSOVER,
         PICKUP,
         VAN,
-        MINIVAN
+        MINIVAN;
+
+        private String name;
+
+        bodyType() {
+
+        }
+
+        bodyType(String name) {
+            this.name = name;
+        }
+
+        public String getName() {
+            return name;
+        }
     }
     public Car(String brand, String model, int engineVolume) {
         super(brand, model, engineVolume);
